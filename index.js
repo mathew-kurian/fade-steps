@@ -20,15 +20,15 @@ function rgbToHex (r, g, b) {
   var blue = Math.round(b).toString(16)
 
   if (red.length === 1) {
-    red = red + red
+    red = 0 + red
   }
 
   if (green.length === 1) {
-    green = green + green
+    green = 0 + green
   }
 
   if (blue.length === 1) {
-    blue = blue + blue
+    blue = 0 + blue
   }
   return red + green + blue
 }
